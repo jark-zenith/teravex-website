@@ -1,25 +1,32 @@
-# TERAVEX — AI Research & Technology
+# TERAVEX Website
 
-The official TERAVEX company website. TERAVEX is an independent AI research and technology company with roots in Kenya and a global outlook.
+The website is built as a Vite static site. Existing editorial sections and vanilla navigation remain intact; React enhances only the hero visual.
 
-## Website
-- Semantic HTML, responsive CSS and vanilla JavaScript
-- No framework, build process, server, database, API or runtime dependencies
-- Direct email and WhatsApp click-to-chat contact links
-- Responsive navigation and reduced-motion support
+## Stack
+- React + TypeScript
+- Vite
+- Tailwind CSS v4 utilities
+- shadcn-compatible component structure in `src/components/ui`
+- Framer Motion for the animated hero
 
-## Local preview
-Open index.html in a browser or serve this directory with any static file server.
+## Local development
+```bash
+npm install
+npm run dev
+```
 
-## Render Static Site
-- Repository: jark-zenith/teravex-website
-- Branch: main
-- Build command: leave empty (or echo "Static site — no build required")
-- Publish directory: .
-- No environment variables required
+## Production
+```bash
+npm run build
+npm run preview
+```
+Build output: `dist/`. Render runs `npm install && npm run build` and publishes `dist`.
 
-## Company representation
-Research topics on this website are described as areas of interest and exploration. Do not present them as completed breakthroughs, deployed proprietary foundation models or validated capabilities unless independently verified. JASVO AI is identified as an early-stage product initiative.
+## Component conventions
+- UI components: `src/components/ui`
+- Shared utilities: `src/lib`
+- Global styles: `src/index.css`
+- `@/` alias resolves to `src/`
+- `components.json` defines shadcn CLI aliases and stylesheet location.
 
-## Project boundary
-This is the personal-account development repository. The TERAVEX GitHub organization and its repositories are separate and are not modified by this project.
+Hero images are sourced from the TERAVEX Drive folder and optimized as WebP in `public/assets`.

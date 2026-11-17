@@ -1,0 +1,13 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./**/*.{ts,tsx}";
+.hero-visual-root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;isolation:isolate}
+.hero-art{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 52% 44%,rgba(53,93,166,.2),transparent 56%),linear-gradient(145deg,rgba(6,13,27,.4),rgba(7,11,18,.08))}
+.hero-glow{inset:0;z-index:0;opacity:.78;pointer-events:none}
+.hero-image-primary,.hero-image-secondary{position:absolute;overflow:hidden;border:1px solid rgba(210,232,255,.24);background:rgba(8,15,28,.8);box-shadow:0 24px 80px rgba(0,0,0,.46),0 0 36px rgba(92,148,255,.17);backdrop-filter:blur(14px)}
+.hero-image-primary{z-index:1;top:50%;left:50%;width:min(84%,470px);height:76%;border-radius:18px}
+.hero-image-secondary{z-index:2;right:2%;bottom:7%;width:42%;height:30%;border-radius:12px;box-shadow:0 16px 48px rgba(0,0,0,.55),0 0 26px rgba(101,217,233,.2)}
+.hero-image-primary img,.hero-image-secondary img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-art-caption{position:absolute;z-index:3;left:5%;bottom:7%;display:flex;flex-direction:column;gap:5px;color:rgba(207,224,245,.75);font:8px/1.4 "DM Mono",monospace;letter-spacing:.16em;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.hero-art-caption span:first-child{color:#9fd8ff}
+@media(max-width:650px){.hero-image-primary{width:82%;height:72%}.hero-image-secondary{right:1%;bottom:7%;width:46%;height:29%}.hero-art-caption{left:4%;bottom:8%;font-size:7px}}
