@@ -1,0 +1,69 @@
+/* TERAVEX editorial refinement — restrained, research-led and responsive. */
+:root{--max:1200px;--surface:#0b1420;--muted:#a4b3c3;--accent:var(--cyan)}
+body{background:#070b12;color:#f3f6fa;letter-spacing:-.008em}
+.site-header{width:min(var(--max),calc(100% - 80px));height:92px;border-bottom-color:rgba(177,199,220,.13)}
+.primary-nav{gap:34px;font-size:12px;letter-spacing:.005em}
+.primary-nav a{transition:color .2s ease}
+.nav-contact{padding:11px 17px;border-radius:999px;border-color:rgba(177,199,220,.25)}
+.hero.section-wrap{min-height:calc(100svh - 92px)}
+.hero-copy{width:min(var(--max),calc(100% - 80px));min-height:calc(100svh - 92px);padding-top:84px;padding-bottom:130px}
+.hero-copy h1{font-size:clamp(78px,9.4vw,132px);letter-spacing:-.09em;line-height:.94;max-width:900px}
+.hero-lede{font-size:16px;line-height:1.85;color:#b0bdcb;max-width:560px}
+.eyebrow{font-size:10px;letter-spacing:.19em}
+.button{border-radius:999px;padding:15px 21px;font-size:12px}
+.button-primary{box-shadow:0 8px 30px rgba(101,217,233,.12)}
+.button-quiet{border-color:rgba(177,199,220,.22)}
+.statement{padding-top:145px;padding-bottom:145px;grid-template-columns:.72fr 2.8fr;gap:70px}
+.statement-body{grid-template-columns:1.1fr .9fr;gap:90px}
+.statement h2,.section-heading h2,.technology-intro h2,.contact h2{letter-spacing:-.075em}
+.statement-copy{font-size:13px;color:#a8b6c5;line-height:2.05}
+.research{padding-top:95px;padding-bottom:135px}
+.section-heading{margin:38px 0 52px}
+.section-heading>p,.technology-intro>p{font-size:13px;max-width:340px;color:#a8b6c5}
+.research-grid{gap:14px}
+.research-card{min-height:350px;padding:27px 25px 24px;border-radius:14px;background:linear-gradient(155deg,rgba(17,30,46,.92),rgba(9,16,27,.96));transition:transform .3s ease,border-color .3s ease,background .3s ease}
+.research-card:hover{transform:translateY(-5px);background:linear-gradient(155deg,rgba(21,39,58,.98),rgba(9,16,27,.98))}
+.research-card h3{font-size:17px}
+.research-card p{font-size:12px;line-height:1.9;color:#a3b1c0}
+.card-foot{left:25px;bottom:24px}
+.section-note{font-size:11px;margin-top:22px}
+.work{padding-top:100px;padding-bottom:140px;border-top:1px solid var(--line)}
+.work-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin:38px 0 52px}
+.work-heading h2{font-size:clamp(48px,6vw,76px);line-height:1.02;letter-spacing:-.08em;margin:13px 0 0}
+.work-heading h2 em{font-style:normal;color:#8296ad}
+.work-heading>p{max-width:370px;margin:0 0 7px;color:#a8b6c5;font-size:13px;line-height:1.9}
+.work-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}
+.work-card{min-width:0;border:1px solid rgba(161,190,218,.16);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#101b29,#0a111b);transition:border-color .25s ease,transform .25s ease}
+.work-card:hover{border-color:rgba(101,217,233,.42);transform:translateY(-4px)}
+.work-card>a{display:flex;height:100%;flex-direction:column}
+.work-image{position:relative;height:360px;overflow:hidden;background:#0d1724}
+.work-image-tall{height:360px}
+.work-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1);filter:saturate(.88)}
+.work-card:hover .work-image img{transform:scale(1.035)}
+.work-image:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(180deg,transparent,rgba(4,8,14,.68));pointer-events:none}
+.work-image-index{position:absolute;z-index:1;left:23px;bottom:20px;font:9px 'DM Mono',monospace;letter-spacing:.15em;color:#f0f5fb}
+.work-card-copy{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:24px 25px 27px}
+.work-card-copy h3{font-size:19px;letter-spacing:-.035em;margin:0 0 7px}
+.work-card-copy p{max-width:470px;color:#9eafbf;font-size:12px;line-height:1.85;margin:0}
+.work-arrow{font-size:20px;color:var(--cyan);padding-top:2px}
+.work-note{font-size:10px;color:#788da2;line-height:1.8;margin:18px 0 0}
+.technology{padding-top:100px;padding-bottom:130px}
+.technology-list article{padding:28px 4px}
+.technology-list h3{font-size:17px}
+.technology-list p{font-size:12px;color:#a3b1c0}
+.product-preview{border-radius:14px;padding:30px;background:radial-gradient(ellipse at 10% 50%,rgba(51,138,168,.14),transparent 48%),#0b1420}
+.principles{padding-top:55px;padding-bottom:135px}
+.principles h2{letter-spacing:-.075em}
+.principle-grid{gap:34px}
+.principle-grid h3{font-size:16px}
+.principle-grid p{font-size:12px;color:#a3b1c0;line-height:1.85}
+.contact{padding-top:100px;padding-bottom:135px}
+.contact-layout{gap:100px}
+.contact-lede{font-size:14px;color:#a8b6c5}
+.contact-link{padding:23px 0}
+.contact-link strong{font-size:14px}
+.site-footer{padding-top:36px;padding-bottom:30px}
+.site-footer>p{font-size:12px}
+@media(max-width:900px){.site-header{width:calc(100% - 48px)}.hero-copy{width:calc(100% - 48px)}.statement{grid-template-columns:1fr;gap:30px}.statement-body{gap:45px}.work-grid{grid-template-columns:1fr 1fr}.work-image,.work-image-tall{height:300px}.contact-layout{gap:45px}}
+@media(max-width:650px){.site-header{width:calc(100% - 36px);height:74px}.primary-nav{gap:18px}.hero.section-wrap{min-height:calc(100svh - 74px)}.hero-copy{width:calc(100% - 36px);min-height:calc(100svh - 74px);padding:60px 0 105px}.hero-copy h1{font-size:clamp(64px,16vw,94px);line-height:.98}.hero-lede{font-size:14px}.statement{padding-top:90px;padding-bottom:90px;gap:24px}.statement-body{grid-template-columns:1fr;gap:20px}.statement h2,.section-heading h2,.technology-intro h2{font-size:44px}.research{padding-top:65px;padding-bottom:90px}.research-card{min-height:290px;border-radius:12px}.work{padding-top:70px;padding-bottom:95px}.work-heading{display:block;margin:28px 0 30px}.work-heading h2{font-size:52px}.work-heading>p{margin-top:18px;font-size:12px}.work-grid{grid-template-columns:1fr;gap:14px}.work-image,.work-image-tall{height:280px}.work-card{border-radius:12px}.work-card-copy{padding:20px}.work-card-copy h3{font-size:17px}.technology{padding-top:70px;padding-bottom:90px}.product-preview{padding:18px;border-radius:12px}.principles{padding-top:35px;padding-bottom:90px}.principle-grid{gap:22px}.contact{padding-top:70px;padding-bottom:90px}.contact-layout{gap:28px}.contact h2{font-size:60px}.contact-link strong{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.work-card,.work-image img{transition:none}}
