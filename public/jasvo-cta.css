@@ -7,3 +7,5 @@
   .jasvo-mobile-cta .jasvo-beta-label { padding:2px 4px; font-size:7px; }
   .primary-nav .nav-contact { display:none; }
 }
+/* White JASVO action button on desktop and mobile. */
+.nav-contact, .jasvo-mobile-cta { background:#fff !important; color:#081521 !important; border-color:#fff !important; }
