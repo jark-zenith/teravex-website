@@ -8,4 +8,6 @@
   .primary-nav .nav-contact { display:none; }
 }
 /* White JASVO action button on desktop and mobile. */
-.nav-contact, .jasvo-mobile-cta { background:#fff !important; color:#081521 !important; border-color:#fff !important; }
+.nav-contact, .jasvo-mobile-cta { background:#fff !important; color:#000 !important; border-color:#fff !important; }
+/* Strong black CTA lettering, including nested label text. */
+.nav-contact, .nav-contact *, .jasvo-mobile-cta, .jasvo-mobile-cta * { color:#000 !important; font-weight:800 !important; }
