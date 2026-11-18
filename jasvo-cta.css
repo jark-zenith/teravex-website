@@ -1,0 +1,46 @@
+/* JASVO beta call-to-action — additive styles; preserves TERAVEX visual language. */
+.nav-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.jasvo-beta-label {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(158, 225, 232, .42);
+  border-radius: 999px;
+  padding: 3px 6px;
+  color: #a8eaf0;
+  font: 8px 'DM Mono', monospace;
+  letter-spacing: .1em;
+}
+.jasvo-mobile-cta { display: none; }
+
+@media (max-width: 700px) {
+  .jasvo-mobile-cta {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transform: translateY(-50%);
+    padding: 9px 10px;
+    border: 1px solid rgba(158, 225, 232, .48);
+    border-radius: 999px;
+    background: rgba(15, 32, 47, .9);
+    color: #f4f8fc;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .jasvo-mobile-cta .jasvo-beta-label {
+    padding: 2px 5px;
+    font-size: 7px;
+  }
+  /* The always-visible mobile CTA replaces the duplicate menu CTA. */
+  .primary-nav .nav-contact { display: none; }
+}
